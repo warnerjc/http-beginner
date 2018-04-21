@@ -15,9 +15,9 @@ let goodServer = http.createServer(goodRequest);
 let badServer = http.createServer(badRequest);
 
 goodServer.listen(goodPort, function () {
-    console.log("Server listening on: http://localhost:" + goodPort);
+    console.log("Good Server listening on: http://localhost:" + goodPort);
 });
 
 badServer.listen(badPort, function() {
-    console.log("Server listening on: http://localhost:" + badPort);
+    console.log("Bad Server listening on: http://localhost:" + badPort);
 });
